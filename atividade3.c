@@ -3,14 +3,13 @@
 #define CONSUMO 12.0  
 
 int main() {
-    double distancia, preco;
-    double litros, custo;
+    float distancia, preco, litros, custo;
 
     printf("Digite a distancia total (km): ");
-    scanf("%lf", &distancia);
+    scanf("%f", &distancia);
 
     printf("Digite o preco do combustivel (R$): ");
-    scanf("%lf", &preco);
+    scanf("%f", &preco);
 
     litros = distancia / CONSUMO;
     custo = litros * preco;
